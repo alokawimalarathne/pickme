@@ -68,11 +68,12 @@ class UsersController extends AppController {
  * @param string $id
  * @return void
  */
-	public function edit($id = null) {
+	public function edit($id = null) { 
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
-		}
+		} //echo '<pre>';print_r($this);die;
 		if ($this->request->is(array('post', 'put'))) {
+                    //$this->Post->us_id = $id;
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('The user has been saved.'));
 				return $this->redirect(array('action' => 'index'));

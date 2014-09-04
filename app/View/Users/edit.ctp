@@ -3,11 +3,12 @@
 	<fieldset>
 		<legend><?php echo __('Edit User'); ?></legend>
 	<?php
-		echo $this->Form->input('us_reg_no', array('label'=>'Reg Number'));
+		echo $this->Form->input('us_id', array('label'=>'Reg Number', 'type'=>'hidden'));
+                echo $this->Form->input('us_reg_no', array('label'=>'Reg Number'));
 		echo $this->Form->input('us_first_name',array('label'=>'First Name'));
 		echo $this->Form->input('us_last_name',array('label'=>'Last Name'));
 		echo $this->Form->input('us_email',array('label'=>'Email'));
-		echo $this->Form->input('us_password', array('type'=>'password'));
+		//echo $this->Form->input('us_password', array('type'=>'password'));
 		
 		echo $this->Form->input('us_tp_no_land',array('label'=>'Land Phone'));
 		echo $this->Form->input('us_tp_no_mobile',array('label'=>'Mobile'));
