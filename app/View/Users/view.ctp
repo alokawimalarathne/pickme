@@ -1,121 +1,80 @@
 <div class="users view">
 <h2><?php echo __('User'); ?></h2>
 	<dl>
-		<dt><?php echo __('Us Id'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Us Reg No'); ?></dt>
+		
+		
+		<dt><?php echo __('Reg Number'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_reg_no']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us First Name'); ?></dt>
+		<dt><?php echo __('First Name'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_first_name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Last Name'); ?></dt>
+		<dt><?php echo __('Last Name'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_last_name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Email'); ?></dt>
+		<dt><?php echo __('Email'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_email']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Password'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_password']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Us Confirmed'); ?></dt>
+		
+		
+		<dt><?php echo __('Confirmed'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_confirmed']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Tp No Land'); ?></dt>
+		<dt><?php echo __('Land Phone'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_tp_no_land']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Tp No Mobile'); ?></dt>
+		<dt><?php echo __('Mobile'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_tp_no_mobile']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Created'); ?></dt>
+		<dt><?php echo __('Joined Date'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Modified'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_modified']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Us Session'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_session']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Us City'); ?></dt>
+		
+		
+		<dt><?php echo __('City'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_city']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us First Access'); ?></dt>
+		<dt><?php echo __('First Access'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_first_access']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Last Access'); ?></dt>
+		<dt><?php echo __('Last Access'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_last_access']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Url'); ?></dt>
+		<dt><?php echo __('Web Site'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_url']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Picture'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_picture']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Us Discription1'); ?></dt>
+		
+		<dt><?php echo __('Discription'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['us_discription1']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Us Discription2'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_discription2']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Us Ip'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_ip']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Us Deleted'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_deleted']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Us Policy Agreed'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_policy_agreed']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Us Visible'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['us_visible']); ?>
-			&nbsp;
-		</dd>
+		
+		
 	</dl>
 </div>
 <div class="actions">

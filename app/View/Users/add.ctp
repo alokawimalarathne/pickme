@@ -3,28 +3,28 @@
 	<fieldset>
 		<legend><?php echo __('Add User'); ?></legend>
 	<?php
-		echo $this->Form->input('us_reg_no');
-		echo $this->Form->input('us_first_name');
-		echo $this->Form->input('us_last_name');
-		echo $this->Form->input('us_email');
-		echo $this->Form->input('us_password');
-		echo $this->Form->input('us_confirmed');
-		echo $this->Form->input('us_tp_no_land');
-		echo $this->Form->input('us_tp_no_mobile');
-		echo $this->Form->input('us_created');
-		echo $this->Form->input('us_modified');
-		echo $this->Form->input('us_session');
-		echo $this->Form->input('us_city');
-		echo $this->Form->input('us_first_access');
-		echo $this->Form->input('us_last_access');
-		echo $this->Form->input('us_url');
-		echo $this->Form->input('us_picture');
-		echo $this->Form->input('us_discription1');
-		echo $this->Form->input('us_discription2');
-		echo $this->Form->input('us_ip');
-		echo $this->Form->input('us_deleted');
-		echo $this->Form->input('us_policy_agreed');
-		echo $this->Form->input('us_visible');
+		echo $this->Form->input('us_reg_no', array('label'=>'Reg Number'));
+		echo $this->Form->input('us_first_name',array('label'=>'First Name'));
+		echo $this->Form->input('us_last_name',array('label'=>'Last Name'));
+		echo $this->Form->input('us_email',array('label'=>'Email'));
+		echo $this->Form->input('us_password', array('type'=>'password'));
+		
+		echo $this->Form->input('us_tp_no_land',array('label'=>'Land Phone'));
+		echo $this->Form->input('us_tp_no_mobile',array('label'=>'Mobile'));
+		//echo $this->Form->input('us_created');
+		//echo $this->Form->input('us_modified');
+		//echo $this->Form->input('us_session');
+		echo $this->Form->input('us_city',array('label'=>'City'));
+		//echo $this->Form->input('us_first_access');
+		//echo $this->Form->input('us_last_access');
+		echo $this->Form->input('us_url',array('label'=>'Website'));
+		//echo $this->Form->input('us_picture');
+		echo $this->Form->input('us_discription1',array('label'=>'Description'));
+		//echo $this->Form->input('us_discription2');
+		//echo $this->Form->input('us_ip');
+		//echo $this->Form->input('us_deleted');
+		echo $this->Form->input('us_policy_agreed',array('label'=>'I agree to the PickMe Terms and Privacy.'));
+		//echo $this->Form->input('us_visible');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
