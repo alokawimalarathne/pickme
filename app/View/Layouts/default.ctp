@@ -32,26 +32,23 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
+		echo $this->Html->css('/usermgmt/css/umstyle');
 		echo $this->fetch('script');
+		
 	?>
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php //echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<h1><?php  ?></h1>
 		</div>
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
-
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<?php // echo $this->Html->link(
-//					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-//					'http://www.cakephp.org/',
-//					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-//				);
+			<?php 
 			?>
 			<p>
 				<?php //echo $cakeVersion; ?>
