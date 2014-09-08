@@ -9,12 +9,12 @@ if (!Configure::read('debug')):
 	throw new NotFoundException();
 endif;
 
-App::uses('Debugger', 'Utility');
-//echo '<pre>'; print_r(); echo'</pre>';
+App::uses('Debugger', 'Utility'); //die;
+//echo '<pre>'; print_r($this->UserAuth->getUserId()); echo'</pre>';
 ?>
-<div style="float:left;padding-left:10px"><?php if (empty($this->UserAuth->getUserId())) echo $this->Html->link(__("Login", true), "/login") ?></div>
-<div style="float:left;padding-left:10px"><?php if (!empty($this->UserAuth->getUserId())) echo $this->Html->link(__("Dash board", true), "/dashboard") ?></div>
-<div style="float:right;padding-left:10px"><?php if (!empty($this->UserAuth->getUserId()))echo $this->Html->link(__("Sign Out",true),"/logout") ?></div>
+<div style="float:left;padding-left:10px"><?php if (($this->UserAuth->getUserId())==FALSE) echo $this->Html->link(__("Login", true), "/login") ?></div>
+<div style="float:left;padding-left:10px"><?php if (($this->UserAuth->getUserId())== TRUE) echo $this->Html->link(__("Dash board", true), "/dashboard") ?></div>
+<div style="float:right;padding-left:10px"><?php if (($this->UserAuth->getUserId())==TRUE)echo $this->Html->link(__("Sign Out",true),"/logout") ?></div>
 
 <div  style="float:left;padding-left:10px">
 <?php echo $this->Html->link('Register as student', '/register/?utype=student'); ?>
