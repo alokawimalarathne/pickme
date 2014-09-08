@@ -134,7 +134,7 @@ class UsersController extends UserMgmtAppController {
 	 * @access public
 	 * @return void
 	 */
-	public function register() {
+	public function register() {//print_r( $this );// die;
 		$userId = $this->UserAuth->getUserId();
 		if ($userId) {
 			$this->redirect("/dashboard");
@@ -182,7 +182,7 @@ class UsersController extends UserMgmtAppController {
 						$this->Session->setFlash(__('Please check your mail and confirm your registration'));
 						$this->redirect('/login');
 					}
-				}
+                                }
 			}
 		} else {
 			$this->Session->setFlash(__('Sorry new registration is currently disabled, please try again later'));
@@ -247,7 +247,7 @@ class UsersController extends UserMgmtAppController {
 	 * @access public
 	 * @return void
 	 */
-	public function addUser() {
+	public function addUser() {            
 		$userGroups=$this->UserGroup->getGroups();
 		$this->set('userGroups', $userGroups);
 		if ($this->request -> isPost()) {

@@ -1,5 +1,9 @@
 <?php
-$utype = $this->data['UserGroup']['alias_name']; //echo '<pre>';print_r($this->data['UserGroup']['alias_name']);echo '</pre>';
+if(isset($this->params['url']['utype'])){
+$utype = $this->params['url']['utype']; //echo '<pre>';print_r($this);echo '</pre>';
+}else{
+ $utype = '';   
+}
 ?>
 <div class="umtop">
     <?php echo $this->Session->flash(); ?>
@@ -32,18 +36,21 @@ $utype = $this->data['UserGroup']['alias_name']; //echo '<pre>';print_r($this->d
                         <div>
                             <div class="umstyle3"><?php echo __('Group'); ?><font color='red'>*</font></div>
                             <div class="umstyle4" ><?php echo $this->Form->input("user_group_id", array('type' => 'select', 'label' => false, 'div' => false, 'class' => "umstyle5" , 'disabled'=>'disabled', 'value'=>'3')) ?></div>
+                            <input type="hidden" value="3" name="user_group_id"/>  
                             <div style="clear:both"></div>
                         </div>
                     <?php }elseif($utype==='staff'){ ?>
                         <div>
                             <div class="umstyle3"><?php echo __('Group'); ?><font color='red'>*</font></div>
                             <div class="umstyle4" ><?php echo $this->Form->input("user_group_id", array('type' => 'select', 'label' => false, 'div' => false, 'class' => "umstyle5", 'disabled'=>'disabled', 'value'=>'2')) ?></div>
+                            <input type="hidden" value="2" name="user_group_id"/>  
                             <div style="clear:both"></div>
                         </div>
                     <?php }elseif($utype==='company'){?>
                         <div>
                             <div class="umstyle3"><?php echo __('Group'); ?><font color='red'>*</font></div>
                             <div class="umstyle4" ><?php echo $this->Form->input("user_group_id", array('type' => 'select', 'label' => false, 'div' => false, 'class' => "umstyle5", 'disabled'=>'disabled', 'value'=>'4')) ?></div>
+                            <input type="hidden" value="4" name="user_group_id"/>  
                             <div style="clear:both"></div>
                         </div>
                     <?php }else{}?>
