@@ -40,21 +40,21 @@ $utype = $this->params['url']['utype']; //echo '<pre>';print_r($this);echo '</pr
                         <div>
                             <div class="umstyle3"><?php echo __('Group'); ?><font color='red'>*</font></div>
                             <div class="umstyle4" ><?php echo $this->Form->input("user_group_id", array('type' => 'select', 'label' => false, 'div' => false, 'class' => "umstyle5" , 'disabled'=>'disabled', 'value'=>'3')) ?></div>
-                             <input type="hidden" value="3" name="user_group_id"/>  
+                            <?php  echo $this->Form->input("user_group_id", array('type' => 'hidden', 'value'=>'3')); ?>                         
                             <div style="clear:both"></div>
                         </div>
                     <?php }elseif($utype==='staff'){ ?>
                         <div>
                             <div class="umstyle3"><?php echo __('Group'); ?><font color='red'>*</font></div>
                             <div class="umstyle4" ><?php echo $this->Form->input("user_group_id", array('type' => 'select', 'label' => false, 'div' => false, 'class' => "umstyle5", 'disabled'=>'disabled', 'value'=>'2')) ?></div>
-                             <input type="hidden" value="2" name="user_group_id"/>  
+                              <?php  echo $this->Form->input("user_group_id", array('type' => 'hidden', 'value'=>'3')); ?>
                             <div style="clear:both"></div>
                         </div>
                     <?php }elseif($utype==='company'){?>
                         <div>
                             <div class="umstyle3"><?php echo __('Group'); ?><font color='red'>*</font></div>
                             <div class="umstyle4" ><?php echo $this->Form->input("user_group_id", array('type' => 'select', 'label' => false, 'div' => false, 'class' => "umstyle5", 'disabled'=>'disabled', 'value'=>'4')) ?></div>
-                             <input type="hidden" value="4" name="user_group_id"/>  
+                             <?php  echo $this->Form->input("user_group_id", array('type' => 'hidden', 'value'=>'4')); ?>
                             <div style="clear:both"></div>
                         </div>
                     <?php }else{}?>

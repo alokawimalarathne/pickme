@@ -134,7 +134,7 @@ class UsersController extends UserMgmtAppController {
 	 * @access public
 	 * @return void
 	 */
-	public function register() {//print_r( $this );// die;
+	public function register() {//echo'<pre>';print_r($this->data['User']); die;
 		$userId = $this->UserAuth->getUserId();
 		if ($userId) {
 			$this->redirect("/dashboard");
@@ -149,7 +149,7 @@ class UsersController extends UserMgmtAppController {
 				$this->User->set($this->data);
 				if ($this->User->RegisterValidate()) {
 					if (!isset($this->data['User']['user_group_id'])) {
-						$this->request->data['User']['user_group_id']=DEFAULT_GROUP_ID;
+						//$this->request->data['User']['user_group_id']=DEFAULT_GROUP_ID;
 					} elseif (!$this->UserGroup->isAllowedForRegistration($this->data['User']['user_group_id'])) {
 						$this->Session->setFlash(__('Please select correct register as'));
 						return;
